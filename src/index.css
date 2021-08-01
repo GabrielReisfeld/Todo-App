@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('./media/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 code {
@@ -15,6 +18,9 @@ code {
 .main {
   margin: 0 auto;
   max-width: 500px;
+}
+h1 {
+  text-align: center;
 }
 .content {
   border: 5px #c0c0ff solid;
