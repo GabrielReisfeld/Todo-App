@@ -40,17 +40,17 @@ export default class TaskItem extends Component {
               </form>
             </td>
             <td>
-              <button type="submit" onClick={this.handleSubmit}>
+              <button className="save" type="submit" onClick={this.handleSubmit}>
                 Save
               </button>
-              <button type="button" onClick={() => this.setEditingState(false)}>
+              <button className="cancel" type="button" onClick={() => this.setEditingState(false)}>
                 Cancel
               </button>
             </td>
           </>
         ) : (
           <>
-            <td onClick={this.toggleTask}>
+            <td className="task" onClick={this.toggleTask}>
               <input
                 type="checkbox"
                 readOnly
@@ -67,8 +67,8 @@ export default class TaskItem extends Component {
               </span>
             </td>
             <td>
-              <button onClick={() => this.setEditingState(true)}>Edit</button>
-              <button onClick={this.deleteTask}>Delete</button>
+              <button className="edit" onClick={() => this.setEditingState(true)}>Edit</button>
+              <button className="delete" onClick={this.deleteTask}>Delete</button>
             </td>
           </>
         )}
