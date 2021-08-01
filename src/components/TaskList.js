@@ -3,18 +3,26 @@ import TaskItem from "./TaskItem";
 
 export default class TaskList extends Component {
   render() {
-    return <table>
+    return (
+      <table>
         <thead>
-            <tr>
-                <th>Task</th>
-                <th>Actions</th>
-            </tr>
+          <tr>
+            <th>Task</th>
+            <th>Actions</th>
+          </tr>
         </thead>
         <tbody>
-            {this.props.tasks.map((task, index) => (
-                <TaskItem key={index} taskItem={task} id={index} />
-            ))}
+          {this.props.tasks.map((task, index) => (
+            <TaskItem
+              key={index}
+              taskItem={task}
+              id={index}
+              deleteTask={this.props.deleteTask}
+              editTask={this.props.editTask}
+            />
+          ))}
         </tbody>
-    </table>;
+      </table>
+    );
   }
 }
