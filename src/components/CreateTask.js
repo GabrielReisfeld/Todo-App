@@ -19,6 +19,7 @@ export default class CreateTask extends Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <input
+          className="enterTask"
           type="text"
           placeholder="Enter Task"
           value={this.state.task}

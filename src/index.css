@@ -22,6 +22,9 @@ code {
   flex-direction: column;
   width: 50rem;
 }
+.enterTask {
+  width: 30rem;
+}
 h1 {
   text-align: center;
 }
@@ -67,6 +70,7 @@ button:hover {
 button.add {
   background-color: #0080ff;
   color: #ffffff;
+  margin-left: 10px;
 }
 button.edit {
   background-color: #20a0b0;
