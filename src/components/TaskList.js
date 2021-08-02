@@ -7,8 +7,8 @@ export default class TaskList extends Component {
       <table>
         <thead>
           <tr>
-            <th>Task</th>
-            <th>Actions</th>
+            <th>Tasks</th>
+            <th className="actions">Actions</th>
           </tr>
         </thead>
         <tbody>

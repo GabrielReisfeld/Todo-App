@@ -17,20 +17,27 @@ code {
 
 .main {
   margin: 0 auto;
-  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50rem;
 }
 h1 {
   text-align: center;
 }
 .content {
-  border: 5px #c0c0ff solid;
+  border: 5px #aa082b solid;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 30px;
   background-color: #f0f0f0;
   padding: 20px;
 }
 table {
   width: 100%;
+}
+.actions {
+  text-align: right;
+  padding-right: 15px;
 }
 td:first-child {
   width: 100%;
@@ -46,13 +53,16 @@ tr:nth-child(even) {
 }
 input,
 button {
-  font-size: 20px;
+  font-size: 25px;
   padding: 5px;
   border-radius: 5px;
   border: 2px #c0c0c0 solid;
 }
 button {
   cursor: pointer;
+}
+button:hover {
+  opacity: 0.8;
 }
 button.add {
   background-color: #0080ff;
@@ -71,7 +81,7 @@ button.save {
   color: #ffffff;
 }
 button.cancel {
-  background-color: #707080;
+  background-color: #e0c10f;
   color: #ffffff;
 }
 
@@ -81,4 +91,8 @@ button.cancel {
 
 .completed {
   text-decoration: line-through;
+  opacity: 0.5;
+}
+.buttons {
+  display: flex;
 }

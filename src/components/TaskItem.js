@@ -39,7 +39,7 @@ export default class TaskItem extends Component {
                 />
               </form>
             </td>
-            <td>
+            <td className="buttons">
               <button className="save" type="submit" onClick={this.handleSubmit}>
                 Save
               </button>
@@ -66,7 +66,7 @@ export default class TaskItem extends Component {
                 {this.props.taskItem.task}
               </span>
             </td>
-            <td>
+            <td className="buttons">
               <button className="edit" onClick={() => this.setEditingState(true)}>Edit</button>
               <button className="delete" onClick={this.deleteTask}>Delete</button>
             </td>
